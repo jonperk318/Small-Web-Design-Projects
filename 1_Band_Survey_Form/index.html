@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <header>
+        <h1 id="title">
+          Survey Form
+        </h1>
+        <p id="description">
+          Thank you for your feedback
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Number</label>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            class="form-control"
+            min=0
+            max=9999999999
+            placeholder="Enter your number"
+          />
+        <div class="form-group">
+          <p>What role in the band are you primarily interested in?</p>
+          <select 
+            id="dropdown" 
+            name="role"
+            class="form-control"
+            required>
+            <option disabled selected value>Select role</option>
+            <option value="musician">Musician</option>
+            <option value="manager">Road Manager</option>
+            <option value="social-media">Social Media Specialist</option>
+            <option value="sound-engineer">Sound Engineer</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What time of day are you most available to practice?</p>
+          <input
+              name="user-recommend"
+              value="morning"
+              type="radio"
+              class="input-radio"
+              checked
+            />Morning (8AM to 12PM)</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="afternoon"
+              type="radio"
+              class="input-radio"
+            />Afternoon (12PM to 6PM)</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="evening"
+              type="radio"
+              class="input-radio"
+            />Evening (6PM to 10PM)</label>
+        </div>
+    </div>
+    <div class="form-group">
+          <p>
+            If you are a musician, what instruments do you play?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+          <label
+            ><input
+              name="prefer"
+              value="vocals"
+              type="checkbox"
+              class="input-checkbox"
+            />Vocals</label>
+          <label>
+            <input
+              name="prefer"
+              value="acoustic-guitar"
+              type="checkbox"
+              class="input-checkbox"
+            />Acoustic/Rhythm Guitar</label>
+          <label
+            ><input
+              name="prefer"
+              value="lead-guitar"
+              type="checkbox"
+              class="input-checkbox"
+            />Lead Guitar</label>
+          <label
+            ><input
+              name="prefer"
+              value="bass"
+              type="checkbox"
+              class="input-checkbox"
+            />Bass Guitar</label>
+          <label
+            ><input
+              name="prefer"
+              value="keys"
+              type="checkbox"
+              class="input-checkbox"
+            />Keys</label>
+          <label
+            ><input
+              name="prefer"
+              value="drums"
+              type="checkbox"
+              class="input-checkbox"
+            />Drums</label>
+          <label
+            ><input
+              name="prefer"
+              value="pad"
+              type="checkbox"
+              class="input-checkbox"
+            />Pad/Synth</label>
+          <label
+            ><input
+              name="prefer"
+              value="other"
+              type="checkbox"
+              class="input-checkbox"
+            />Other</label>
+        </div>
+        <div class="form-group">
+          <p>Any comments or additional instruments not mentioned above?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter comments here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+  </body>
+</html>
