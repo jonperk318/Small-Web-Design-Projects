@@ -176,11 +176,11 @@ nav > ul {
   }
 }
 
-#features {
+#our-watermelons {
   margin-top: 30px;
 }
 
-#features .icon {
+#our-watermelons .icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,12 +190,12 @@ nav > ul {
 }
 
 @media (max-width: 550px) {
-  #features .icon {
+  #our-watermelons .icon {
     display: none;
   }
 }
 
-#features .desc {
+#our-watermelons .desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -205,7 +205,7 @@ nav > ul {
 }
 
 @media (max-width: 550px) {
-  #features .desc {
+  #our-watermelons .desc {
     width: 100%;
     text-align: center;
     padding: 0;
@@ -214,18 +214,18 @@ nav > ul {
 }
 
 @media (max-width: 650px) {
-  #features {
+  #our-watermelons {
     margin-top: 0;
   }
 }
 
-#how-it-works {
+#what-to-do {
   margin-top: 40px;
   display: flex;
   justify-content: center;
 }
 
-#how-it-works > iframe {
+#what-to-do > iframe {
   max-width: 580px;
   width: 100%;
 }
@@ -278,7 +278,7 @@ nav > ul {
 
 .product > button:hover {
   background-color: var(--color3);
-  transition: background-color 1s;
+  transition: background-color 0.5s;
 }
 
 @media (max-width: 800px) {
