@@ -1,5 +1,14 @@
 /* Styling global elements */
 
+:root {
+    --color1: #FA687F;
+    --color2: #F35659;
+    --color3: #E32633;
+    --color4: #BECA86;
+    --color5: #90AC1A;
+    --off-white: #F2F0EF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +16,8 @@
 }
 
 body {
-  background-color: #eee;
-  font-family: Veranda, sans-serif;
+  background-color: var(--off-white);
+  font-family: Tahoma, sans-serif;
 }
 
 #page-wrapper {
@@ -38,7 +47,7 @@ a {
   font-size: 1em;
   font-weight: 900;
   text-transform: uppercase;
-  border: 3px black solid;
+  border: 3px var(--color5);
   border-radius: 2px;
   background: transparent;
   cursor: pointer;
@@ -56,7 +65,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #eee;
+  background-color: var(--color4);
 }
 
 @media (max-width: 600px) {
@@ -133,7 +142,7 @@ nav > ul {
   justify-content: center;
   text-align: center;
   height: 200px;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 #hero > h2 {
@@ -153,11 +162,11 @@ nav > ul {
   height: 30px;
   margin: 15px 0;
   border: 0;
-  background-color: #f1c40f;
+  background-color: var(--color1);
 }
 
 #hero input[type='submit']:hover {
-  background-color: orange;
+  background-color: var(--color3);
   transition: background-color 1s;
 }
 
@@ -177,7 +186,7 @@ nav > ul {
   justify-content: center;
   height: 125px;
   width: 20vw;
-  color: darkorange;
+  color: var(--color5);
 }
 
 @media (max-width: 550px) {
@@ -211,13 +220,13 @@ nav > ul {
 }
 
 #how-it-works {
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
 
 #how-it-works > iframe {
-  max-width: 560px;
+  max-width: 580px;
   width: 100%;
 }
 
@@ -240,7 +249,7 @@ nav > ul {
 }
 
 .product > .level {
-  background-color: #ddd;
+  background-color: var(--color4);
   color: black;
   padding: 15px 0;
   width: 100%;
@@ -263,12 +272,12 @@ nav > ul {
 .product > button {
   border: 0;
   margin: 15px 0;
-  background-color: #f1c40f;
+  background-color: var(--color1);
   font-weight: 400;
 }
 
 .product > button:hover {
-  background-color: orange;
+  background-color: var(--color3);
   transition: background-color 1s;
 }
 
